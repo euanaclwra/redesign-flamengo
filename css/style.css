@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@font-face {
+    font-family: "Tactico";
+    src: url(/fonts/tactico/Tactico-Grunge.otf);
+}
+
+@font-face {
+    font-family: "Black Ravens";
+    src: url(/fonts/black_ravens/Black\ Ravens.ttf);
+}
+
+@font-face {
+    font-family: "Agency FB";
+    src: url(/fonts/agency-fb/agency-fb-2.ttf);
+}
+
+.pre-main {
+    background-image: url(/img/bg-torcida.png);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+}
+
+header {
+    padding: 70px 95px 35px 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 90px;
+}
+
+.menu-principal, .menu-redes {
+    align-self: center;
+}
+
+.menu-principal ul, .menu-redes ul {
+    display: flex;
+}
+
+.item-menu-principal {
+    margin-left: 55px;
+    text-transform: uppercase;
+    font-family: "Tactico";
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-redes {
+    justify-self: right;
+}
+
+.menu-redes ul li a img{
+    width: 42px;
+    transition: 0.2s;
+}
+
+.menu-redes ul li a img:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+
+.divider {
+    background-color: #bb0a0a;
+    width: 0px;
+    height: 1px;
+    align-self: center;
+    margin-bottom: 4px;
+    transition: 0.2s;
+}
+
+.menu-principal ul li:hover .divider {
+    width: 60px;
+}
+
+.menu-dropdown {
+    display: flex;
+    position: absolute;
+    top: 135px;
+    flex-direction: column;
+    background-color: white;
+    padding: 3px 10px 7px 10px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-1.5em);
+    transition: 0.3s;
+}
+
+.item-dropdown {
+    font-family: "Agency FB";
+    font-size: 15px;
+    font-weight: bold;
+    color: #bb0a0a;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.divider-dropdown {
+    background-color: rgba(128, 128, 128, 0.35);
+    width: 50px;
+    height: 1px;
+    margin-top: 5px;
+}
+
+.item-dropdown:hover {
+    color: #bb0a0a86;
+}
+
+.toggle-dropdown:hover .menu-dropdown {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0.1s;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h3 {
+    font-family: "Tactico";
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    line-height: 55px;
+}
+
+h3 {
+    color: #2b2b2b;
+}
+
+h1 span, h3 span {
+    font-family: "Black Ravens";
+    color: #bb0a0a;
+    font-size: 90px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.flex-item {
+    height: 250px;
+    width: 520px;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    transition: 0.2s;
+}
+
+.flex-item:hover {
+    transform: scale(1.05);
+}
+
+.tag-noticia {
+    background-color: #bb0a0a;
+    width: fit-content;
+    padding: 3px 11px 3px 11px;
+    font-family: "Tactico";
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+
+}
+
+.img-noticia {
+    height: 220px;
+}
+
+.noticia {
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: "Tactico";
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.txt-noticia {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 11px;
+    width: 210px;
+}
+
+.bt-noticia {
+    background-color: #bb0a0a;
+    font-family: "Agency FB";
+    color: white;
+    border-color: transparent;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.bt-noticia:hover {
+    background-color: white;
+    color: #bb0a0a;
+}
+
+.section-2 {
+    background-image: url(/img/bg-pattern.png);
+    height: 768px;
+    padding: 60px;
+}
+
+.jogo-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.post-it {
+    z-index: -1;
+}
+
+.txt-data {
+    font-family: "Black Ravens";
+    color: white;
+    z-index: 1;
+    font-size: 70px;
+    position: relative;
+    top: 135px;
+    left: 23px;
+}
+
+.campeonato {
+    font-family: "Tactico";
+    color: #bb0a0a;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 23px;
+}
+
+.times {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.times img {
+    height: 70px;
+}
+
+.times p {
+    font-family: "Black Ravens";
+    color: #2b2b2b;
+    font-size: 40px;
+    align-self: center;
+}
